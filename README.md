@@ -5,7 +5,7 @@
 This project implements a small data pipeline that ingests, validates, cleans, and transforms CSV datasets into analysis-ready outputs.
 
 The solution follows a layered architecture inspired by modern data platform design principles:
-
+```
 CSV Files
     ↓
 Bronze Layer
@@ -19,7 +19,7 @@ Silver Layer
 Aggregation
     ↓
 Gold Layer
-
+```
 Tracking Layer
 
 The pipeline is designed to be rerunnable, auditable, and easy to extend.
@@ -27,7 +27,7 @@ The pipeline is designed to be rerunnable, auditable, and easy to extend.
 ---
 
 ## Project Structure
-
+```
 input/      -> Source CSV files
 sql/        -> Database schemas
 src/        -> Pipeline implementation
@@ -38,7 +38,7 @@ Bronze DB   -> Raw ingested data
 Silver DB   -> Clean validated data
 Gold DB     -> Aggregated outputs
 Tracking DB -> Metadata, data quality and pipeline monitoring
-
+```
 ---
 
 ## Data Model
